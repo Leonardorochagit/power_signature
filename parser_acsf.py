@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import os
 
 # retorna o diretório de trabalho atual de um processo + a pasta onde está os dados dos elétros
-directory = os.getcwd() + '/ACS-F1'
+directory = '/Users/brunamartini/code/power_signature' + '/ACS-F1'
 # gera os nomes dos arquivos em uma árvore de diretórios, percorrendo a árvore de cima para baixo ou de baixo para cima.
 list_dir = [x[0] for x in os.walk(directory)]
 list_dir = list_dir[1:]
@@ -43,7 +43,7 @@ for dirnames in list_dir:
       #   print(filenames)
       # if (list_xml_rmsVolt != list_mat_rmsVolt):
       #   print(filenames)
-
+      print(list_xml_phAngle)
     # Se a extenção do aqruivo for .mat
     if filenames.endswith(".mat"):
       cnt = 0
@@ -77,7 +77,7 @@ for dirnames in list_dir:
       # if (filenames[-5] != child.get('session')):
       #   child.set('session', filenames[-5])
       #   tree.write(dirnames + '/' + filenames)
-
+      print(list_mat_phAngle)
 # for i in range(0,len(list_db)):
 #    print(list_db[i] + '\t' + list_name[i])
 

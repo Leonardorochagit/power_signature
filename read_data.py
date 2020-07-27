@@ -68,6 +68,7 @@ def check_signature(list_xml_freq, list_xml_phAngle, list_xml_power, list_xml_re
               list_mat_rmsCur = line_float
         if cnt != 6:
           print(filenames)
+  print(list_xml_phAngle)
   # Os valores são próximo mas não iguais, comparar em porcentagem
   if compare_array(list_xml_freq, list_mat_freq):
     print(filenames)
@@ -82,22 +83,17 @@ def check_signature(list_xml_freq, list_xml_phAngle, list_xml_power, list_xml_re
   if compare_array(list_xml_rmsVolt, list_mat_rmsVolt):
     print(filenames)
 
-def compare_array(list_xml_freq, list_mat_freq):
+def compare_array(list_xml, list_mat):
   i = 0
-  z = 0
-  x = tamanho_do_array(list_mat_freq)
-  while i != x:
-    if list_xml_freq[i] == list_mat_freq[i]:
-      z = z+1
-    i = i+1;
-  if porcentagem(x, z) > 90:
+  xlm = 0
+  mat = len(list_mat)
+  while i != mat:
+    if round(list_xml[i], 0) == round(list_mat[i], 0):
+      xlm = xlm+1
+    i = i+1
+  if porcentagem(mat, xlm) > 0:
     return True
 
-def tamanho_do_array(array):
-  i = 0
-  for x in array:
-    i = i+1;
-  return i
-
 def porcentagem(mat, xlm):
+  print(xlm*100/mat)
   return xlm*100/mat
