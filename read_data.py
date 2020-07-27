@@ -68,20 +68,15 @@ def check_signature(list_xml_freq, list_xml_phAngle, list_xml_power, list_xml_re
               list_mat_rmsCur = line_float
         if cnt != 6:
           print(filenames)
-  print(list_xml_phAngle)
+  # print(list_xml_phAngle)
   # Os valores são próximo mas não iguais, comparar em porcentagem
-  if compare_array(list_xml_freq, list_mat_freq):
-    print(filenames)
-  if compare_array(list_xml_phAngle, list_mat_phAngle):
-    print(filenames)
-  if compare_array(list_xml_power, list_mat_power):
-    print(filenames)
-  if compare_array(list_xml_reacPower, list_mat_reacPower):
-    print(filenames)
-  if compare_array(list_xml_rmsCur, list_mat_rmsCur):
-    print(filenames)
   if compare_array(list_xml_rmsVolt, list_mat_rmsVolt):
-    print(filenames)
+    if compare_array(list_xml_rmsCur, list_mat_rmsCur):
+      if compare_array(list_xml_power, list_mat_power):
+        if compare_array(list_xml_reacPower, list_mat_reacPower):
+          if compare_array(list_xml_freq, list_mat_freq):
+            if compare_array(list_xml_phAngle, list_mat_phAngle):
+              print(filenames)
 
 def compare_array(list_xml, list_mat):
   i = 0
@@ -91,9 +86,9 @@ def compare_array(list_xml, list_mat):
     if round(list_xml[i], 0) == round(list_mat[i], 0):
       xlm = xlm+1
     i = i+1
-  if porcentagem(mat, xlm) > 0:
+  if porcentagem(mat, xlm) > 80:
     return True
 
 def porcentagem(mat, xlm):
-  print(xlm*100/mat)
+  # print(xlm*100/mat)
   return xlm*100/mat
