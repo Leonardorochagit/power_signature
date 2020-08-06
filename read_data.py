@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import os
+import plot_graph
 
 def signature(signal_path):
   # gera os nomes dos arquivos em uma árvore de diretórios, percorrendo a árvore de cima para baixo ou de baixo para cima.
@@ -32,6 +33,9 @@ def signature(signal_path):
   check_signature(list_xml_freq, list_xml_phAngle, list_xml_power, list_xml_reacPower, list_xml_rmsCur, list_xml_rmsVolt)
 
 def check_signature(list_xml_freq, list_xml_phAngle, list_xml_power, list_xml_reacPower, list_xml_rmsCur, list_xml_rmsVolt):
+  # plota gráficos caso necessário
+  # plot_graph.initialize(list_xml_freq);
+
   # retorna o diretório de trabalho atual de um processo + a pasta onde está os dados dos elétros
   directory = os.getcwd() + '/ACS-F1'
   # gera os nomes dos arquivos em uma árvore de diretórios, percorrendo a árvore de cima para baixo ou de baixo para cima.
