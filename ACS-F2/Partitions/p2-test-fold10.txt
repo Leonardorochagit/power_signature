@@ -1,0 +1,31 @@
+Protocol 2 ; version 1 ; Test ; Fold 10
+Model Hi-Fi system (with CD player) 2
+	dz_hifi_Sharp_XL-UH240_a1
+	dz_hifi_Sharp_XL-UH240_a2
+Model TV (LCD / LED) 2
+	ar_Tv_SonyBravia_KDL-40W5500_a1
+	ar_Tv_SonyBravia_KDL-40W5500_a2
+Model Mobile phone (via charger) 2
+	cc_mobile_BlackBerry_8520_a1
+	cc_mobile_BlackBerry_8520_a2
+Model Coffee machine 2
+	dz_coffeeMachine_MioStar_a1
+	dz_coffeeMachine_MioStar_a2
+Model Computer station (with monitor) 2
+	ar_computer-monitor_as2-PhilipsBrillance220B_a1
+	ar_computer-monitor_as2-PhilipsBrillance220B_a2
+Model Fridge / Freezer 2
+	dz_freezer_Miele_F7261S1_a1
+	dz_freezer_Miele_F7261S1_a2
+Model Lamp (CFL) 2
+	cg_lamp_LumiLampe_87459_a1
+	cg_lamp_LumiLampe_87459_a2
+Model Laptop 2
+	cc_laptop_Toshiba_a1
+	cc_laptop_Toshiba_a2
+Model Microwave 2
+	ar_microwave_Satrap_MGH5030_a1
+	ar_microwave_Satrap_MGH5030_a2
+Model Printer 2
+	cg_printer_HP_Photosmart_a1
+	cg_printer_HP_Photosmart_a2
