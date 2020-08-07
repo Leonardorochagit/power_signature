@@ -44,10 +44,9 @@ for dirnames in list_dir:
             list_mat_rmsVolt = line_float
           elif cnt == 6:
             list_mat_rmsCur = line_float
-      # if cnt != 6:
-      # print(filenames);
-      # print(np.max(list_mat_phAngle));
-      # print(np.min(list_mat_phAngle));
+        if cnt != 6:
+          print(filenames);
 
+      # salva valores em arquivo csv
       c.writerow([filenames,np.min(list_mat_phAngle),np.max(list_mat_phAngle),np.min(list_mat_freq),np.max(list_mat_freq),np.min(list_mat_reacPower),np.max(list_mat_reacPower),np.min(list_mat_power),np.max(list_mat_power),np.min(list_mat_rmsVolt),np.max(list_mat_rmsVolt),np.min(list_mat_rmsCur),np.max(list_mat_rmsCur)])
 
