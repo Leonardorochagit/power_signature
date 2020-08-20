@@ -1,0 +1,31 @@
+Protocol 2 ; version 1 ; Test ; Fold 9
+Model Hi-Fi system (with CD player) 2
+	cg_hifi_Sharp_MD-X5_a1
+	cg_hifi_Sharp_MD-X5_a2
+Model TV (LCD / LED) 2
+	jh_tv_Philips_Cineos_a1
+	jh_tv_Philips_Cineos_a2
+Model Mobile phone (via charger) 2
+	az_mobile_Nokia_6120_a1
+	az_mobile_Nokia_6120_a2
+Model Coffee machine 2
+	cg_coffeeMachine_Jura_ImpressaC5_a1
+	cg_coffeeMachine_Jura_ImpressaC5_a2
+Model Computer station (with monitor) 2
+	ar_computer-monitor_as-PhilipsBrillance220B_a1
+	ar_computer-monitor_as-PhilipsBrillance220B_a2
+Model Fridge / Freezer 2
+	ar_fridge_Fagor_a1
+	ar_fridge_Fagor_a2
+Model Lamp (CFL) 2
+	cg_lamp_LumiLamp_87110_a1
+	cg_lamp_LumiLamp_87110_a2
+Model Laptop 2
+	ar_laptop_Acer_TravelMate6593_a1
+	ar_laptop_Acer_TravelMate6593_a2
+Model Microwave 2
+	ar_microwave_MioStar1_a1
+	ar_microwave_MioStar1_a2
+Model Printer 2
+	cg_printer_HP_LaserJet4200_a1
+	cg_printer_HP_LaserJet4200_a2

@@ -1,0 +1,31 @@
+Protocol 2 ; version 1 ; Test ; Fold 2
+Model Hi-Fi system (with CD player) 2
+	ar_hifi_JVC_UX-LP55_a1
+	ar_hifi_JVC_UX-LP55_a2
+Model TV (LCD / LED) 2
+	ar_Tv_Samsung_19D4010_a1
+	ar_Tv_Samsung_19D4010_a2
+Model Mobile phone (via charger) 2
+	jh_mobile_Motorola_Milestone_a1
+	jh_mobile_Motorola_Milestone_a2
+Model Coffee machine 2
+	jh_coffeeMachine_Nespresso_TurMixTx100_a1
+	jh_coffeeMachine_Nespresso_TurMixTx100_a2
+Model Computer station (with monitor) 2
+	ar_computer-monitor_as-AL702_a1
+	ar_computer-monitor_as-AL702_a2
+Model Fridge / Freezer 2
+	cc_fridge_Primotecq_KS118IB_a1
+	cc_fridge_Primotecq_KS118IB_a2
+Model Lamp (CFL) 2
+	dz_lamp_Philips_TornadoESaver_a1
+	dz_lamp_Philips_TornadoESaver_a2
+Model Laptop 2
+	cc_laptop_Lenovo_T420_a1
+	cc_laptop_Lenovo_T420_a2
+Model Microwave 2
+	ar_microwave_Intertronic_a1
+	ar_microwave_Intertronic_a2
+Model Printer 2
+	ar_printer_HP_LaserJet5100dtn_a1
+	ar_printer_HP_LaserJet5100dtn_a2
