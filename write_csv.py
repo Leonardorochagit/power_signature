@@ -4,7 +4,7 @@ import numpy as np
 import csv
 
 # retorna o diretório de trabalho atual de um processo + a pasta onde está os dados dos elétros
-directory =  '/Users/brunamartini/code/power_signature' + '/ACS-F3'
+directory =  '/Users/brunamartini/code/power_signature' + '/ACS-F2'
 
 # gera os nomes dos arquivos em uma árvore de diretórios, percorrendo a árvore de cima para baixo ou de baixo para cima.
 list_dir = [x[0] for x in os.walk(directory)]
@@ -12,7 +12,7 @@ list_dir = list_dir[1:]
 list_name = []
 
 # criar planilha e popular cabeçalho
-c = csv.writer(open("db_elet.csv", "w"))
+c = csv.writer(open("db_eletr.csv", "w"))
 c.writerow(["Eletro", "phAngle_mean", "Freq_mean", "ReactPower_mean", "Power_mean", "Volts_mean", "Cur_mean"])
 
 for dirnames in list_dir:
@@ -48,5 +48,11 @@ for dirnames in list_dir:
           print(filenames)
 
       # salva valores médios em arquivo csv
-      c.writerow([filenames,np.mean(list_mat_phAngle),np.mean(list_mat_freq),np.mean(list_mat_reacPower),np.mean(list_mat_power),np.mean(list_mat_rmsVolt),np.mean(list_mat_rmsCur)])
+      c.writerow([filenames,
+                  float(np.mean(list_mat_phAngle)),
+                  float(np.mean(list_mat_freq)),
+                  float(np.mean(list_mat_reacPower)),
+                  float(np.mean(list_mat_power)),
+                  float(np.mean(list_mat_rmsVolt)),
+                  float(np.mean(list_mat_rmsCur))])
 

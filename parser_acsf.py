@@ -31,18 +31,18 @@ for dirnames in list_dir:
             list_xml_rmsCur.append(float(child_2.get('rmsCur')))
             list_xml_rmsVolt.append(float(child_2.get('rmsVolt')))
       check_xml = True
-      # if (list_xml_freq != list_mat_freq):
-      #   print(filenames)
-      # if (list_xml_phAngle != list_mat_phAngle):
-      #   print(filenames)
-      # if (list_xml_power != list_mat_power):
-      #   print(filenames)
-      # if (list_xml_reacPower != list_mat_reacPower):
-      #   print(filenames)
-      # if (list_xml_rmsCur != list_mat_rmsCur):
-      #   print(filenames)
-      # if (list_xml_rmsVolt != list_mat_rmsVolt):
-      #   print(filenames)
+      if (list_xml_freq != list_mat_freq):
+        print(filenames)
+      if (list_xml_phAngle != list_mat_phAngle):
+        print(filenames)
+      if (list_xml_power != list_mat_power):
+        print(filenames)
+      if (list_xml_reacPower != list_mat_reacPower):
+        print(filenames)
+      if (list_xml_rmsCur != list_mat_rmsCur):
+        print(filenames)
+      if (list_xml_rmsVolt != list_mat_rmsVolt):
+        print(filenames)
       print(list_xml_phAngle)
     # Se a extenção do aqruivo for .mat
     if filenames.endswith(".mat"):
