@@ -4,13 +4,13 @@ from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifie
 from sklearn.model_selection import train_test_split # Import train_test_split function
 from sklearn import metrics #Import scikit-learn metrics module for accuracy calculation
 
-col_names = ['pregnant', 'glucose', 'bp', 'skin', 'insulin', 'bmi', 'pedigree', 'age', 'label']
+col_names = ["Eletro", "phAngle_mean", "Freq_mean", "ReactPower_mean", "Power_mean", "Volts_mean", "Cur_mean"]
 # load dataset
-pima = pd.read_csv("pima-indians-diabetes.csv", header=0, names=col_names)
+pima = pd.read_csv("db_eletr.csv", header=0, names=col_names)
 pima.head()
 
 #split dataset in features and target variable
-feature_cols = ['pregnant', 'insulin', 'bmi', 'age','glucose','bp','pedigree']
+feature_cols = ["phAngle_mean", "Freq_mean", "ReactPower_mean", "Power_mean", "Volts_mean", "Cur_mean"]
 X = pima[feature_cols] # Features
 y = pima.label # Target variable
 
