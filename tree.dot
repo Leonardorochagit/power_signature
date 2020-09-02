@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Volts_mean <= 235.9\nmse = 13.1\nsamples = 8\nvalue = 7.3"] ;
+1 [label="phAngle_mean <= 159.3\nmse = 5.7\nsamples = 5\nvalue = 9.4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Power_mean <= 355.4\nmse = 0.6\nsamples = 3\nvalue = 7.6"] ;
+1 -> 2 ;
+3 [label="mse = 0.0\nsamples = 1\nvalue = 7.0"] ;
+2 -> 3 ;
+4 [label="Freq_mean <= 50.0\nmse = 0.2\nsamples = 2\nvalue = 8.5"] ;
+2 -> 4 ;
+5 [label="mse = 0.0\nsamples = 1\nvalue = 9.0"] ;
+4 -> 5 ;
+6 [label="mse = 0.0\nsamples = 1\nvalue = 8.0"] ;
+4 -> 6 ;
+7 [label="phAngle_mean <= 226.7\nmse = 0.2\nsamples = 2\nvalue = 12.3"] ;
+1 -> 7 ;
+8 [label="mse = 0.0\nsamples = 1\nvalue = 13.0"] ;
+7 -> 8 ;
+9 [label="mse = 0.0\nsamples = 1\nvalue = 12.0"] ;
+7 -> 9 ;
+10 [label="phAngle_mean <= 123.3\nmse = 2.7\nsamples = 3\nvalue = 3.2"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="Cur_mean <= 0.3\nmse = 0.2\nsamples = 2\nvalue = 2.3"] ;
+10 -> 11 ;
+12 [label="mse = 0.0\nsamples = 1\nvalue = 3.0"] ;
+11 -> 12 ;
+13 [label="mse = 0.0\nsamples = 1\nvalue = 2.0"] ;
+11 -> 13 ;
+14 [label="mse = 0.0\nsamples = 1\nvalue = 6.0"] ;
+10 -> 14 ;
+}
