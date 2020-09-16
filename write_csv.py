@@ -12,8 +12,9 @@ list_dir = list_dir[1:]
 list_name = []
 
 # criar planilha e popular cabeçalho
-c = csv.writer(open("db_eletr.csv", "w"))
-c.writerow(["Eletro", "phAngle_mean", "Freq_mean", "ReactPower_mean", "Power_mean", "Volts_mean", "Cur_mean"])
+c = csv.writer(open("db_elet.csv", "w"))
+c.writerow(["Label", "phAngle_mean", "Freq_mean", "ReactPower_mean", "Power_mean", "Power_max", "Power_min", "Volts_mean", "Cur_mean"])
+a = 0;
 
 for dirnames in list_dir:
   list_filenames = [x[2] for x in os.walk(dirnames)][0]
@@ -48,11 +49,14 @@ for dirnames in list_dir:
           print(filenames)
 
       # salva valores médios em arquivo csv
-      c.writerow([filenames,
+      a=a+1;
+      c.writerow([a,
                   float(np.mean(list_mat_phAngle)),
                   float(np.mean(list_mat_freq)),
                   float(np.mean(list_mat_reacPower)),
                   float(np.mean(list_mat_power)),
+                  float(np.max(list_mat_power)),
+                  float(np.min(list_mat_power)),
                   float(np.mean(list_mat_rmsVolt)),
                   float(np.mean(list_mat_rmsCur))])
 
